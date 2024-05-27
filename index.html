@@ -8,6 +8,11 @@
 </head>
 <body>
    <div class="container" id="apps">
+    <div class="form-inline mr-auto">
+        <Label for="" class="font-weight-bold mr-2">Max</Label>
+        <input type="number" class="form-control w-25" v-model="maximum">
+    </div>
+    <input type="range" class="custom-range" min="0" max="200"  v-model="maximum">
     <div class="row d-flex mb-3 align-items-center" v-for="item in products">
         <div v-if="item.price >= Number(maximum)">
             <div class="col-sm-4">

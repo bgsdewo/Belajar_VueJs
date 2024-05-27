@@ -7,7 +7,7 @@ var dataProduct = {
             "id": "532",
             "name": "Slicker Jacket",
             "description": "Wind and rain are no match for our organic bamboo slicker jacket for men and women. Triple stitched seams, zippered pockets, and a stay-tight hood are just a few features of our best-selling jacket.",
-            "price": "25",
+            "price": "125",
             "image_title": "slicker-jacket_lynda_29941",
             "image": "https://hplussport.com/wp-content/uploads/2016/12/slicker-jacket_LYNDA_29941.jpg"
         },
@@ -51,6 +51,54 @@ var dataProduct = {
             "image_title": "v-neck-long-sleeved-pullover_lynda_29946",
             "image": "https://hplussport.com/wp-content/uploads/2016/12/v-neck-long-sleeved-pullover_LYNDA_29946.jpg"
         },
+        {
+            "id": "500",
+            "name": "Thermal Fleece Jacket",
+            "description": "Our thermal organic fleece jacket, is brushed on both sides for ultra softness and warmth. This medium-weight jacket is versatile all year around, and can be worn with layers for the winter season.",
+            "price": "60",
+            "image_title": "thermal-jacket_lynda_29943",
+            "image": "https://hplussport.com/wp-content/uploads/2016/12/thermal-jacket_LYNDA_29943.jpg"
+        },
+        {
+            "id": "483",
+            "name": "Stretchy Dance Pants",
+            "description": "Whether dancing the samba, mastering a yoga pose, or scaling the climbing wall, our stretchy dance pants, made from 80% organic cotton and 20% Lycra, are the most versatile and comfortable workout pants you'll ever have the pleasure of wearing.",
+            "price": "55",
+            "image_title": "stretch-dance-pants_lynda_29942",
+            "image": "https://hplussport.com/wp-content/uploads/2016/12/stretch-dance-pants_LYNDA_29942.jpg"
+        },
+        {
+            "id": "526",
+            "name": "Polo Shirt",
+            "description": "Our pre-shrunk organic cotton polo shirt is perfect for weekend activities, lounging around the house, and casual days at the office. With its triple-stitched sleeves and waistband, our polo has maximum durability.",
+            "price": "35",
+            "image_title": "polo-shirt_lynda_29938",
+            "image": "https://hplussport.com/wp-content/uploads/2016/12/polo-shirt_LYNDA_29938.jpg"
+        },
+        {
+            "id": "528",
+            "name": "Skater Graphic T-Shirt",
+            "description": "Hip at the skate park or around down, our pre-shrunk organic cotton graphic T-shirt has you covered.",
+            "price": "33",
+            "image_title": "skater-knit-shirt_lynda_29939",
+            "image": "https://hplussport.com/wp-content/uploads/2016/12/skater-knit-shirt_LYNDA_29939.jpg"
+        },
+        {
+            "id": "522",
+            "name": "V-Neck T-Shirt",
+            "description": "Our pre-shrunk organic cotton V-neck T-shirt is the ultimate in comfort and durability, with triple stitching at the collar, sleeves, and waist. So versatile you'll want one in every color!",
+            "price": "17",
+            "image_title": "v-neck-t-shirt-for-men_lynda_29949",
+            "image": "https://hplussport.com/wp-content/uploads/2016/12/v-neck-T-shirt-for-men_LYNDA_29949.jpg"
+        },
+        {
+            "id": "524",
+            "name": "V-Neck T-Shirt",
+            "description": "Our pre-shrunk organic cotton t-shirt, with its slightly fitted waist and elegant V-neck is designed to flatter. You'll want one in every color!",
+            "price": "17",
+            "image_title": "v-neck-t-shirt-for-women_lynda_29948",
+            "image": "https://hplussport.com/wp-content/uploads/2016/12/v-neck-T-shirt-for-women_LYNDA_29948.jpg"
+        },
     ]
 }; 
 
@@ -72,3 +120,7 @@ var app = new Vue({
 // data itu didalam property apa (in products),disini kita make didalam products
 
 //Materi Fungsi Kondisi di dalam VueJS
+// jadi di VueJs juga bisa menggunakan pengkondisian if else
+// misalnya dengan menggunakan v-if="item.price >= Number(maximum)"
+
+//Materi Menangani Input Data dari User

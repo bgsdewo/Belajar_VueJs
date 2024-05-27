@@ -1,0 +1,4 @@
+//vue js ini bersifat Reactive Data pada VueJS
+pada saat kita menghubungkan elemen dengan objek atau properti yang didalam 
+vue js ini,maka secara otomatis terus terhubung dan data dalam property tersebut dapat
+kita ubah secara real-time(tanpa refresh halaman)dan proses perubahaannya akan lngsg ditamilkan kedalam elemen html

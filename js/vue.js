@@ -1,21 +1,24 @@
 //Materi Reactive Data pada VueJs
-
-
-
 var app = new Vue({
-    el:'#apps',
+    el: '#app',
     data: {
-        maximum:50,
-        products:null,
+        maximum: 50,
+        products: null,
+        cart: []
     },
-    mounted:function() {
+    mounted: function() {
         fetch('https://hplussport.com/api/products/order/price')
-        .then(Response => Response.json())
+        .then(response => response.json())
         .then(data => {
             this.products = data;
         });
+    },
+    methods: {
+        addItem: function (product) {
+            this.cart.push(product);
+        }
     }
-})
+});
 
 //Materi Cara Binding Data ke dalam Attribute HTML
 // v-bind -> menggunakan itu cara binding data ke HTML
@@ -38,3 +41,21 @@ var app = new Vue({
 
 
 //Materi Mengenal Lifecyle Hooks VueJS
+// var app = new Vue({
+//     el:'#apps',
+//     data: {
+//         maximum:50,
+//         products:null,
+//     },
+//     mounted:function() {
+//         fetch('https://hplussport.com/api/products/order/price')
+//         .then(Response => Response.json())
+//         .then(data => {
+//             this.products = data;
+//         });
+//     }
+// }) kita bisa melakukan ini tanpa menulis hardcode pada objek sebelumnya
+
+
+//Materi Mengenal Event dan Method di dalam VueJS
+// v-on:click="addItem(item)"

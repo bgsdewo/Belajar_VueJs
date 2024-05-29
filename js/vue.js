@@ -82,4 +82,4 @@ var app = new Vue({
 // dalam menggunakan Computed Property kita tidak perlu memanggilnya
 // milsai slugTize(),itu kita bisa langunsg saja slugTize
 
-//Perbedaan Methods dan Computed Property
+//Materi Perbedaan Methods dan Computed Property

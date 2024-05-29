@@ -37,7 +37,8 @@
                 </div>
             </div>
         </transition>
-        <div class="row d-flex mb-3 align-items-center" v-for="item in products" v-if="item.price <= Number(maximum)">
+        <transition-group name="fade" tag="div" enter-active-class="animate__animated animate__fadeInRight" leave-active-class="animate__animated animate__fadeOutRight">
+        <div class="row d-flex mb-3 align-items-center" v-for="(item, index) in products" :key="item.id" v-if="item.price <= Number(maximum)">
             <div class="col-1 m-auto">
                 <button class="btn btn-info" v-on:click="addItem(item)">+</button>
             </div>
@@ -50,6 +51,7 @@
                 <div class="h5 float-right">Rp{{ item.price }}</div>
             </div>
         </div>
+    </transition-group>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
     <script src="js/vue.js"></script>

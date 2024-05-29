@@ -1,22 +1,28 @@
-var app = new Vue({
+new Vue({
     el: '#app',
     data: {
         maximum: 50,
-        products: null,
+        products: [],
         cart: [],
         style: {
-            label:['font-weight-bold', 'mr-2']
+            label: ['font-weight-bold', 'mr-2'],
+            inputWidth: 60
         }
     },
-    mounted: function() {
+    computed: {
+        filteredProducts() {
+            return this.products.filter(item => item.price <= this.maximum);
+        }
+    },
+    mounted() {
         fetch('https://hplussport.com/api/products/order/price')
-        .then(response => response.json())
-        .then(data => {
-            this.products = data;
-        });
+            .then(response => response.json())
+            .then(data => {
+                this.products = data;
+            });
     },
     methods: {
-        addItem: function (product) {
+        addItem(product) {
             this.cart.push(product);
         }
     }

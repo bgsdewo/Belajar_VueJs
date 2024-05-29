@@ -33,12 +33,30 @@ var app = new Vue({
         slugText:'The Quick #(*!&@ Brown 29'
     },
     computed: {
+        now:function () {
+            var date = new Date();
+            return (
+                String(date.getHours()) +
+                String(date.getMinutes()) +
+                String(date.getSeconds()) 
+            )
+        },
         slugTize:function () {
             return this.slugText
             .toLowerCase()
             .replace(/[^\w]+/g, '')
-            .replace(/ +/g, '-');
+            .replace(/ +/g, '-') + '-' +this.now;
         }
+    },
+    methods: {
+        // now:function () {
+        //     var date = new Date();
+        //     return (
+        //         String(date.getHours()) +
+        //         String(date.getMinutes()) +
+        //         String(date.getSeconds()) 
+        //     )
+        // }
     }
 })
 //Materi Interpolation Template
@@ -61,3 +79,7 @@ var app = new Vue({
 
 
 //Materi Mengenal Computed Property
+// dalam menggunakan Computed Property kita tidak perlu memanggilnya
+// milsai slugTize(),itu kita bisa langunsg saja slugTize
+
+//Perbedaan Methods dan Computed Property

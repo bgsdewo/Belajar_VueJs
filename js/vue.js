@@ -43,5 +43,5 @@ var app = new Vue({
         }
     }
 });
-
+console.log("Finish chapter 3")
 //enter-active-class="animate__animated animate__fadeInLeft" leave-active-class="animate__animated animate__fadeOut"

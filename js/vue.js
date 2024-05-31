@@ -22,6 +22,11 @@ var app = new Vue({
             return this.style.sliderStatus ? 'd-flex' : 'd-none'
         }
     },
+    filters: {
+        currentFormat: function (value) {
+            return 'Rp' + Number.parseFloat(value).toFixed(2)
+        }
+    },
     methods: {
         before:function (el) {
            el.className = 'd-none'

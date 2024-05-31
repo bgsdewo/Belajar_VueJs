@@ -5,7 +5,7 @@ var app = new Vue({
         products: null,
         cart: [],
         style: {
-            label: 'font-weight-bold mr-2',
+            label: 'fw-bold me-2',
             inputWidth: '60px',
             sliderStatus: false
         }
@@ -48,5 +48,3 @@ var app = new Vue({
         }
     }
 });
-console.log("Finish chapter 3")
-//enter-active-class="animate__animated animate__fadeInLeft" leave-active-class="animate__animated animate__fadeOut"

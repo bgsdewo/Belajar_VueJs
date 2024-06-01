@@ -2,3 +2,7 @@
 pada saat kita menghubungkan elemen dengan objek atau properti yang didalam 
 vue js ini,maka secara otomatis terus terhubung dan data dalam property tersebut dapat
 kita ubah secara real-time(tanpa refresh halaman)dan proses perubahaannya akan lngsg ditamilkan kedalam elemen html
+
+//dalam membuat component pada vue kita bisa memanggilnya dengan nama componentnya
+lalu dalam component ketika kita ingin membuat suatu objek property kita harus menggunakan
+sebuah function

@@ -6,3 +6,7 @@ kita ubah secara real-time(tanpa refresh halaman)dan proses perubahaannya akan l
 //dalam membuat component pada vue kita bisa memanggilnya dengan nama componentnya
 lalu dalam component ketika kita ingin membuat suatu objek property kita harus menggunakan
 sebuah function
+
+emit digunakan ketika ada properti dalam suatu parentnya kita bisa menggunakan emit ketika kita ingin mengaksesnya di
+sub componentnya dengan $emit yg dimana parameter pertama 
+nama dari emitnya dalam yg kedua kita ingin mendapatkan datanuya dari siapa
